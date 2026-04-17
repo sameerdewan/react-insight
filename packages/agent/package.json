@@ -1,0 +1,37 @@
+{
+  "name": "@react-insight/agent",
+  "version": "0.1.0",
+  "description": "Development agent that captures React render events and streams them to React Insight",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "sideEffects": true,
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0"
+  },
+  "keywords": [
+    "react",
+    "devtools",
+    "debugging",
+    "performance",
+    "render"
+  ],
+  "license": "MIT"
+}

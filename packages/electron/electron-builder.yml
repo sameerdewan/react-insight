@@ -1,0 +1,15 @@
+appId: com.react-insight.app
+productName: React Insight
+directories:
+  output: release
+files:
+  - dist/**/*
+  - package.json
+mac:
+  target: [dmg, zip]
+  hardenedRuntime: true
+  category: public.app-category.developer-tools
+win:
+  target: [nsis]
+linux:
+  target: [AppImage, deb]

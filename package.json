@@ -1,0 +1,18 @@
+{
+  "name": "react-insight-monorepo",
+  "private": true,
+  "scripts": {
+    "dev:agent": "pnpm --filter @react-insight/agent dev",
+    "build:agent": "pnpm --filter @react-insight/agent build",
+    "dev:electron": "pnpm --filter react-insight dev",
+    "build:electron": "pnpm --filter react-insight build",
+    "dev:demo": "pnpm --filter @react-insight/demo dev",
+    "build": "pnpm -r build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["better-sqlite3", "electron", "esbuild"]
+  }
+}
